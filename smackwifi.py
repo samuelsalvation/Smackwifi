@@ -124,7 +124,7 @@ while True:
         break
 
 indx = int(Prompt.ask("Insert [bold][bright_black]N.[/bold][/bright_black]",default="1"))-1
-target = ap_list[indx]
+target = smartbots
 chan = ap_info_list[indx][-1]
 print(f"\n[bright_black]Attacking {target} on channel {chan}[/bright_black]...")
 
@@ -136,3 +136,4 @@ Thread(target=deauthenticate_wifi_network,args=(target,chan,interface,mode == "d
 if mode == "handshake_steal":
     print(f"[bright_black]Intercepting handshakes[/bright_black]...")
     intercept_handshakes(interface)
+generate = password
